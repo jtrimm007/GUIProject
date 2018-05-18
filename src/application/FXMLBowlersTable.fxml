@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="718.0" prefWidth="1103.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.FXMLBowlersTableController">
+  <children>
+    <BorderPane prefHeight="718.0" prefWidth="1103.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <TextArea id="idFirstName" layoutX="99.0" layoutY="16.0" prefHeight="39.0" prefWidth="200.0" text="First Name" wrapText="true" />
+            <TextArea id="idPhone" layoutX="766.0" layoutY="75.0" prefHeight="39.0" prefWidth="200.0" text="Phone" wrapText="true" />
+            <TextArea id="idZip" layoutX="766.0" layoutY="14.0" prefHeight="39.0" prefWidth="200.0" text="Zip" wrapText="true" />
+            <TextArea id="idLastName" layoutX="99.0" layoutY="75.0" prefHeight="39.0" prefWidth="200.0" text="Last Name" wrapText="true" />
+            <TextArea id="idState" layoutX="452.0" layoutY="134.0" prefHeight="39.0" prefWidth="200.0" text="State" wrapText="true" />
+            <TextArea id="idMiddleInit" layoutX="99.0" layoutY="134.0" prefHeight="39.0" prefWidth="200.0" text="Middle Init." wrapText="true" />
+            <TextArea id="idCity" layoutX="452.0" layoutY="75.0" prefHeight="39.0" prefWidth="200.0" text="City" wrapText="true" />
+            <TextArea id="idAddress" layoutX="452.0" layoutY="16.0" prefHeight="39.0" prefWidth="200.0" text="Address" wrapText="true" />
+            <ComboBox id="idTeamComboBox" layoutX="795.0" layoutY="133.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Button layoutX="938.0" layoutY="154.0" mnemonicParsing="false" text="Submit" />
+          </children>
+        </AnchorPane>
+      </bottom>
+      <center>
+        <TableView fx:id="idBowlerTableView" prefHeight="200.0" prefWidth="200.0" />
+      </center>
+      <top>
+        <MenuBar>
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>
